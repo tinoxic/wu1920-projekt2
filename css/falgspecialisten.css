@@ -1,0 +1,61 @@
+body{
+   background-color: #222222;
+}
+
+header{
+    background-image: url(/img/topbackground.png);
+    display: block;
+    overflow: hidden;
+    position: relative;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #222222;
+    height: 500px;
+}
+
+.logo{
+  max-width: 85%;
+  margin-left: 15%;
+}
+
+a{
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0.15em;
+  
+  display: inline-block;
+  padding: 15px 20px;
+  position: relative;
+
+  font-family: 'Merriweather', serif;
+}
+
+a:after {    
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: #ff5600;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+  }
+
+  a:hover:after { 
+    width: 100%; 
+    left: 0; 
+  }
+
+nav{
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    margin: auto;
+    text-align: center;
+    align-items: center;
+    grid-gap: 50px;
+    margin-right: 10px;
+}
