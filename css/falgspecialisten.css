@@ -2,7 +2,8 @@ body{
 background-color: #222222;
 }
 
-.body{
+header{
+  position: relative;
   background-image: url(/img/topbackground.png);
   display: block;
   overflow: hidden;
@@ -13,18 +14,17 @@ background-color: #222222;
   height: 500px;
 }
 
-header{
-  position: relative;
+.img{
+  max-width:175%;
+  max-height: 175%;
+
+  margin-left: 12%;
+  transition: transform .3s; /* Animation */
 }
 
-.sticky {
-  position: fixed;
-  top: 0;
-  width: 100%
-}
+.img:hover{
+  transform: scale(1.6);
 
-.sticky + .content {
-  padding-top: 102px;
 }
 
 .logo{
@@ -76,20 +76,20 @@ nav{
     text-align: center;
     align-items: center;
     grid-gap: 50px;
-    margin-right: 10px;
-    width: 99vw;
+    width: 100%;
     height: 10.5vw;
 }
 
-.nav{
+#navbar{
     display: grid;
     grid-template-columns: repeat(6,1fr);
     margin: auto;
     text-align: center;
     align-items: center;
     grid-gap: 50px;
-    margin-right: 10px;
-    background-color: rgba(5, 5, 5, 0.26);
+    background-color: rgba(5, 5, 5, 0.75);
+    position: fixed;
+    top: 0;
 }
 
 .selected{
@@ -124,7 +124,7 @@ nav{
 }
 
 main{
-  margin: auto;
+  margin-top: 8vw;
   text-align: center;
   align-items: center;
   align-content: center;
@@ -144,7 +144,7 @@ h2{
   font-weight: normal;
   text-decoration: underline #ff6500;
   padding-bottom: 10px;
-  padding-top: 30px;
+  padding-top: 30Px;
 }
 
 .price{
@@ -154,4 +154,51 @@ h2{
 .pricepiece{
   color: gray;
   text-transform: lowercase;
+}
+
+footer{
+  background-color:  rgb(71, 71, 71); 
+}
+
+.footer{
+  display: grid;
+  text-align: center;
+  grid-template-columns: repeat(6, 1fr);
+  height: 20vw;
+}
+
+.icon{
+  height: 100px;
+  margin-left: 12%;
+  transition: transform .17s; /* Animation */
+}
+
+.icon:hover{
+    transform: scale(1.15);
+
+}
+
+.rubrik{
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  font-weight: normal;
+  text-decoration: underline #ff6500;
+  margin-bottom: 5vw;
+  align-self: center;
+
+  font-family: 'Merriweather', serif;
+  
+}
+
+.navspace{
+  margin-bottom: 10vw;
+}
+
+.navspaceextra{
+  margin-bottom: 8vw;
+}
+
+.right{
+  margin-left: 2.8vw;
 }
