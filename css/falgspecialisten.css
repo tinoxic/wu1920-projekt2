@@ -191,7 +191,7 @@ display: flex;
   color: white;
 }
 
-.footer .footer-content .about h1 span{
+.footer .footer-content .about h2 span{
   color: #ff6500;
 }
 
@@ -247,6 +247,21 @@ display: flex;
   bottom: 0px;
   left: 0px;
   padding-top: 20px;
+}
+
+.logo-text {
+  font-weight: normal;
+  text-decoration: underline #ff6500;
+
+  color: #ff6500;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0.15em;
+  
+  display: inline-block;
+  position: relative;
+
+  font-family: 'Merriweather', serif;
 }
 
 .icon{
