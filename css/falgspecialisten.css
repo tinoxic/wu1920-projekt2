@@ -35,7 +35,7 @@ header{
 }
 
 .logo-insta{
-  height: 60px;
+  height: 61px;
   transition: transform .17s; /* Animation */
   padding-top: 10px;
 }
@@ -99,7 +99,7 @@ nav{
     text-align: center;
     align-items: center;
     grid-gap: 50px;
-    background-color: rgba(5, 5, 5, 0.75);
+    background-color: rgba(5, 5, 5, 0.5);
     position: fixed;
     top: 0;
 }
@@ -136,20 +136,42 @@ nav{
 }
 
 main{
-  margin-top: 8vw;
+  margin-top: 10vw;
   text-align: center;
   align-items: center;
   align-content: center;
   
   grid-gap: 100px;
-  color: white;
-  padding-top: 40px; 
+  color: white; 
 
 
   font-family: 'Merriweather', serif;
   letter-spacing: 0.15em;
-  text-transform: uppercase;
   text-decoration: none;
+}
+
+.mainalt{
+  margin-top: 8em;
+  margin-bottom: 14em;
+  text-align: center;
+  align-items: center;
+  align-content: center;
+  
+  grid-gap: 100px;
+  color: white; 
+
+
+  font-family: 'Merriweather', serif;
+  letter-spacing: 0.15em;
+  text-decoration: none;
+}
+
+.formulartext{
+  position: absolute;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  margin: 0;
 }
 
 h2{
@@ -157,6 +179,11 @@ h2{
   text-decoration: underline #ff6500;
   padding-bottom: 10px;
   padding-top: 30Px;
+}
+
+.divformular{
+  display:flex;
+  justify-content: center;
 }
 
 .price{
@@ -325,10 +352,22 @@ li span{
 }
 
 .tjanstlayout{
+  padding-top: 10vh;
   display: grid;
   grid-gap: 10px;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(8, 1fr);
+  text-align: center;
+  margin: auto;
+  max-width: 55vw;
+}
+
+.faqlayout{
+  padding-top: 10vh;
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(22, 1fr);
   text-align: center;
   margin: auto;
   max-width: 55vw;
@@ -389,6 +428,111 @@ li span{
   width: 25vw;
 }
 
+.pic5{
+  grid-row-start: 9;
+  grid-row-end: 11;
+  grid-column-start: 2;
+  grid-column-end: 4;
+  max-width: 30vw;
+  max-height: 30vw;
+}
+
+.text5{
+  grid-row-start: 9;
+  grid-row-end: 11;
+  width: 25vw;
+}
+
+.pic6{
+  grid-row-start: 11;
+  grid-row-end: 13;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  max-width: 30vw;
+  max-height: 30vw;
+}
+
+.text6{
+  grid-row-start: 11;
+  grid-row-end: 13;
+  width: 25vw;
+}
+
+.pic7{
+  grid-row-start: 13;
+  grid-row-end: 15;
+  grid-column-start: 2;
+  grid-column-end: 4;
+  max-width: 30vw;
+  max-height: 30vw;
+}
+
+.text7{
+  grid-row-start: 13;
+  grid-row-end: 15;
+  width: 25vw;
+}
+
+.pic8{
+  grid-row-start: 15;
+  grid-row-end: 17;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  max-width: 30vw;
+  max-height: 30vw;
+}
+
+.text8{
+  grid-row-start: 15;
+  grid-row-end: 17;
+  width: 25vw;
+}
+
+.pic9{
+  grid-row-start: 17;
+  grid-row-end: 19;
+  grid-column-start: 2;
+  grid-column-end: 4;
+  max-width: 30vw;
+  max-height: 30vw;
+}
+
+.text9{
+  grid-row-start: 17;
+  grid-row-end: 19;
+  width: 25vw;
+}
+
+.pic10{
+  grid-row-start: 19;
+  grid-row-end: 21;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  max-width: 30vw;
+  max-height: 30vw;
+}
+
+.text10{
+  grid-row-start: 19;
+  grid-row-end: 21;
+  width: 25vw;
+}
+
+.pic11{
+  grid-row-start: 21;
+  grid-row-end: 23;
+  grid-column-start: 2;
+  grid-column-end: 4;
+  max-width: 30vw;
+  max-height: 30vw;
+}
+
+.text11{
+  grid-row-start: 21;
+  grid-row-end: 23;
+  width: 25vw;
+}
+
 .rubriktjanster{
   display: block;
   font-size: 2.0em;
@@ -399,6 +543,17 @@ li span{
   font-weight: normal;
   text-decoration: underline #ff6500;
   padding-bottom: 10px;
+  padding-top: 30Px;
+}
+
+.rubrikfaq{
+  display: block;
+  font-size: 2.0em;
+  margin-top: 0.83em;
+  margin-bottom: 0.83em;
+  margin-left: 0;
+  margin-right: 0;
+  font-weight: normal;
   padding-top: 30Px;
 }
 
@@ -425,6 +580,101 @@ section{
   background-size: cover;
   opacity: 1;
 }
+
+.section2{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+  top: 22.3vh;
+  background: url(/img/plant.jpg);
+  background-size: cover;
+  margin-bottom: 32vh;
+}
+
+.section3{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+  top: 22.3vh;
+  background: url(/img/question.jpg);
+  background-size: cover;
+  opacity: 1;
+}
+
+#formular {
+  margin-top: 10vh;
+width: 600px;
+border: 5px solid rgba(234,234,234,1.00);
+border-radius: 10px;
+background-color: rgba(225,225,225,1.00);
+padding: 20px;
+font-family: "Roboto", "Lucida Grande", "Lucida Sans Unicode", Helvetica, sans-serif;
+font-size: 16px;
+}
+#formular input[type=text],
+#formular input[type=email] {
+width: 100%;
+padding: 10px 5px 10px 10px;
+margin: 5px 0 15px 0;
+display: inline-block;
+border: 1px solid #ccc;
+border-radius: 4px;
+box-sizing: border-box;
+font-size: 18px;
+}
+
+#formular input[type=text]:focus,
+#formular input[type=email]:focus {
+background-color: rgba(254,255,226,1.00);
+}
+
+#formular input[type=submit] {
+width: 80%;
+background-color: rgba(42,90,157,1.00);
+color: rgba(255,255,255,1.00);
+padding: 15px 20px;
+margin: 10px 0;
+border: none;
+border-radius: 4px;
+cursor: pointer;
+box-sizing: border-box;
+font-size: 18px;
+}
+
+#formular input[type=reset] {
+width: 18%;
+background-color: rgba(95,95,95,1.00);
+color: rgba(255,255,255,1.00);
+padding: 15px 20px;
+margin: 10px 0;
+border: none;
+border-radius: 4px;
+cursor: pointer;
+box-sizing: border-box;
+font-size: 18px;
+}
+
+#formular input[type=submit]:hover,
+#formular input[type=reset]:hover {
+background-color: rgba(101,151,222,1.00);
+}
+
+/* MOBILTELEFON och SMARTPHONE (portrait/stående) */
+@media only screen and (max-width: 768px){
+#formular {
+width: 90%;
+}
+#formular input[type=submit],
+#formular input[type=reset] {
+width: 100%;
+}
+}
+
+
 
 .scrolldown{
   position: absolute;
