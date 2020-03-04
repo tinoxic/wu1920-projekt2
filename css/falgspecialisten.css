@@ -166,6 +166,24 @@ main{
   text-decoration: none;
 }
 
+.textalt{
+  margin-top: 5em;
+  padding-bottom: 5em;
+  text-align: center; 
+  align-items: center;
+  align-content: center;
+  margin: auto;
+  
+  grid-gap: 100px;
+  color: white; 
+
+  width: 55%;
+
+  font-family: 'Merriweather', serif;
+  letter-spacing: 0.15em;
+  text-decoration: none;
+}
+
 .formulartext{
   position: absolute;
   left: 50%;
@@ -211,12 +229,13 @@ h2{
 .footer{
   background: #303036;
   color: #d3d3d3;
-  height: 450px;
   position: relative;
+  padding-bottom: 4em;
 }
 
 .footer .footer-content {
 display: flex;
+flex-wrap: wrap;
 }
 
 .footer .footer-content .footer-section {
@@ -338,6 +357,21 @@ li span{
   
 }
 
+.rubrikstor{
+  margin-top: 5em;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    font-weight: normal;
+    text-decoration: underline #ff6500;
+    margin-bottom: 5vw;
+    align-self: center;
+    font-size: 230%;
+  
+    font-family: 'Merriweather', serif;
+    
+  }
+
 .navspace{
   margin-top: 10vw;
   margin-bottom: 10vw;
@@ -349,6 +383,7 @@ li span{
 
 .right{
   margin-left: 2.8vw;
+  margin-top: 7em;
 }
 
 .tjanstlayout{
@@ -751,4 +786,41 @@ section div p{
     left: -5px;
     opacity: 0;
   }
+}
+
+@media only screen and (max-width: 900px) {
+  body {
+    background-color: lightblue;
+  }
+
+  section{
+    width: 95%;
+    margin-left: auto;
+  }
+
+  nav#navbar{
+    display:none;
+  }
+
+  footer#footer{
+    max-width: 100%;
+  }
+
+  .footer-bottom{
+    display: none;
+  }
+
+  .logo-text{
+    letter-spacing: 0em;
+  }
+
+  nav{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    margin: auto;
+    text-align: center;
+    align-items: center;
+    grid-gap: 1vw;
+}
+
 }
