@@ -92,6 +92,7 @@ nav{
     height: 10.5vw;
 }
 
+
 #navbar{
     display: grid;
     grid-template-columns: repeat(6,1fr);
@@ -102,6 +103,21 @@ nav{
     background-color: rgba(5, 5, 5, 0.5);
     position: fixed;
     top: 0;
+}
+
+.toggle{
+  width: 100%;
+  padding: 10px 20px;
+  background: #ff6500;
+  text-align: left;
+  box-sizing: border-box;
+  color: #fff;
+  font-size: 30px;
+  display: none;
+}
+
+.mobile{
+display: none;
 }
 
 .selected{
@@ -590,6 +606,7 @@ li span{
   margin-right: 0;
   font-weight: normal;
   padding-top: 30Px;
+  border-bottom: solid #ff6500;
 }
 
 section{
@@ -790,20 +807,29 @@ section div p{
 
 @media only screen and (max-width: 900px) {
   body {
-    background-color: lightblue;
+    
   }
 
   section{
-    width: 95%;
-    margin-left: auto;
+    width: 90%;
+    margin-right: 5%;
+    margin-left: 5%;
+    z-index: 1;
   }
 
-  nav#navbar{
-    display:none;
+  section div h2{
+    font-size: 350%;
+    text-align: center;
+  }
+
+  section div p{
+    padding: 2vw;
+    text-align: center;
   }
 
   footer#footer{
-    max-width: 100%;
+    width: 100%;
+    z-index: 1;
   }
 
   .footer-bottom{
@@ -815,12 +841,81 @@ section div p{
   }
 
   nav{
-    display: grid;
+    display: block;
     grid-template-columns: repeat(2,1fr);
     margin: auto;
     text-align: center;
     align-items: center;
     grid-gap: 1vw;
+    height: 27vw;
+    z-index: 5;
+}
+
+#navbar{
+  display: block;
+}
+
+.img{
+  max-width: 45vw;
+  max-height: none;
+  height: 30vw;
+  margin-left: 5%;
+  float: left;
+  background-size: cover;
+}
+
+nav h3{
+  display: none;
+}
+
+.invis{
+  display: none;
+}
+
+.toggle{
+  display:block;
+  z-index: 5;
+}
+
+
+ul{
+  display: none;
+  z-index: 5;
+  margin: 10px;
+  padding: 0;
+}
+
+#navbar{
+  background-color: rgba(5, 5, 5, 0);
+
+}
+
+ul a{
+  display: block;
+  text-align: center;
+  background-color: rgba(5, 5, 5, 0.5);
+}
+
+.active{
+  display: block;
+}
+
+.mobile{
+  display: visible;
+}
+
+.click{
+  padding: 10px;
+  display: block;
+}
+
+.selected{
+  display: block;
+  padding: 10px;
+}
+
+.scrolldown{
+  z-index: 3;
 }
 
 }
