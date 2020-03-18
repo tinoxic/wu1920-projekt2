@@ -208,6 +208,14 @@ main{
   margin: 0;
 }
 
+.formulartext2{
+  position: absolute;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+}
+
 h2{
   font-weight: normal;
   text-decoration: underline #ff6500;
@@ -227,6 +235,13 @@ h2{
 .pricepiece{
   color: gray;
   text-transform: lowercase;
+}
+
+.pricepiece2{
+  color: gray;
+  text-transform: lowercase;
+  padding-left: 30%;
+  padding-right: 30%;
 }
 
 .btn {
@@ -917,5 +932,185 @@ ul a{
 .scrolldown{
   z-index: 3;
 }
+
+.pricepiece2{
+  padding-right: 7%;
+  padding-left: 7%;
+}
+
+.tjanstlayout{
+  padding-top: 0;
+  display: block;
+  max-width: 80vw;
+}
+
+.pic1{
+  padding-top: 30vh;
+  max-width: 60vw;
+  max-height: 40vh;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.pic2{
+  padding-top: 10vh;
+  max-width: 60vw;
+  max-height: 40vh;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.pic3{
+  padding-top: 10vh;
+  max-width: 60vw;
+  max-height: 40vh;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.pic4{
+  padding-top: 10vh;
+  max-width: 60vw;
+  max-height: 40vh;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.pic5{
+  padding-top: 10vh;
+  max-width: 60vw;
+  max-height: 40vh;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.pic6{
+  padding-top: 10vh;
+  max-width: 60vw;
+  max-height: 40vh;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.pic7{
+  padding-top: 10vh;
+  max-width: 60vw;
+  max-height: 40vh;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.pic8{
+  padding-top: 10vh;
+  max-width: 60vw;
+  max-height: 40vh;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.pic9{
+  padding-top: 10vh;
+  max-width: 60vw;
+  max-height: 40vh;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.pic10{
+  padding-top: 10vh;
+  max-width: 60vw;
+  max-height: 40vh;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.pic11{
+  padding-top: 10vh;
+  max-width: 60vw;
+  max-height: 40vh;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.text1{
+  width: 80vw;
+  padding-top: 0;
+  margin-top: 0;
+  margin-bottom: 10vh;
+}
+
+.text2{
+  width: 80vw;
+  margin-bottom: 10vh;
+}
+
+.text3{
+  width: 80vw;
+  margin-bottom: 10vh;
+}
+
+.text4{
+  width: 80vw;
+  margin-bottom: 10vh;
+}
+
+.text5{
+  width: 80vw;
+  margin-bottom: 10vh;
+}
+
+.text6{
+  width: 80vw;
+  margin-bottom: 10vh;
+}
+
+.text7{
+  width: 80vw;
+  margin-bottom: 10vh;
+}
+
+.text8{
+  width: 80vw;
+  margin-bottom: 10vh;
+}
+
+.text9{
+  width: 80vw;
+  margin-bottom: 10vh;
+}
+
+.text10{
+  width: 80vw;
+  margin-bottom: 10vh;
+}
+
+.text11{
+  width: 80vw;
+  margin-bottom: 10vh;
+}
+
+.formulartext{
+  padding-top: 15vh;
+  padding-bottom: 10vh;
+  width: 90vw;
+}
+
+.formulartext2{
+  padding-top: 15vh;
+  padding-bottom: 30vh;
+  width: 90vw;
+}
+
+.divformular{
+  padding-top: 5vh;
+  padding-bottom: 10vh;
+}
+
+.faqlayout{
+  display: block;
+  max-width: 80vw;
+}
+
+
 
 }

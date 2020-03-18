@@ -6,18 +6,25 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Om Oss</title>
     <link rel="stylesheet" href="/css/falgspecialisten.css">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">   
     <link href="https://fonts.googleapis.com/css?family=Merriweather&display=swap" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 </head>
 <body>
 
-        <nav id="navbar">
-                <a href="index.html"><img class="logo" src="img/fälgspecialisten_prototyp1.png" alt=""></a>
-                <a href="priser.html" class="click">Våra priser</a>
-                <a href="tjänster.html" class="click">Tjänster</a>
-                <a href="kontakt.html" class="click">Kontakta oss</a>
-                <a href="faq.html" class="click">FAQ</a>
-                <a href="omoss.html" class="selected">Om oss</a>
-            </nav>
+    <nav id="navbar">
+        <div class="toggle">
+            <i class="fa fa-bars menu" aria-hidden="true"></i>
+
+        </div>
+        <ul class="invis"><a href="index.html"><img class="logo invis" src="img/fälgspecialisten_prototyp1.png" alt=""></a></ul>
+        <ul class="mobile"><a href="index.html" class="click">Hem</a></ul>
+        <ul><a href="priser.html" class="click">Våra priser</a></ul>
+        <ul><a href="tjänster.html" class="click">Tjänster</a></ul>
+        <ul><a href="kontakt.html" class="click">Kontakta oss</a></ul>
+        <ul><a href="faq.html" class="click">FAQ</a></ul>
+        <ul><a href="omoss.html" class="selected">Om oss</a></ul>
+    </nav>
 
             <main class="priceinline">
             <h1 class="rubrikstor">Om oss</h1>
@@ -83,6 +90,15 @@
                         &copy; Designed by Tino Badkobeh
                     </div>
                 </footer>
+
+                <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+                <script type="text/javascript">
+                $(document).ready(function(){
+                    $('.menu').click(function(){
+                        $('ul').toggleClass('active');
+                    })
+                })
+                </script>
     
 </body>
 </html>

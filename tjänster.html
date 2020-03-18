@@ -6,18 +6,25 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Tjänster</title>
     <link rel="stylesheet" href="/css/falgspecialisten.css">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">   
     <link href="https://fonts.googleapis.com/css?family=Merriweather&display=swap" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 </head>
 <body>
     
-                <nav id="navbar">
-                    <a href="index.html"><img class="logo" src="img/fälgspecialisten_prototyp1.png" alt=""></a>
-                    <a href="priser.html" class="click">Våra priser</a>
-                    <a href="tjänster.html" class="selected">Tjänster</a>
-                    <a href="kontakt.html" class="click">Kontakta oss</a>
-                    <a href="faq.html" class="click">FAQ</a>
-                    <a href="omoss.html" class="click">Om oss</a>
-                </nav>
+    <nav id="navbar">
+        <div class="toggle">
+            <i class="fa fa-bars menu" aria-hidden="true"></i>
+
+        </div>
+        <ul class="invis"><a href="index.html"><img class="logo invis" src="img/fälgspecialisten_prototyp1.png" alt=""></a></ul>
+        <ul class="mobile"><a href="index.html" class="click">Hem</a></ul>
+        <ul><a href="priser.html" class="click">Våra priser</a></ul>
+        <ul><a href="tjänster.html" class="selected">Tjänster</a></ul>
+        <ul><a href="kontakt.html" class="click">Kontakta oss</a></ul>
+        <ul><a href="faq.html" class="click">FAQ</a></ul>
+        <ul><a href="omoss.html" class="click">Om oss</a></ul>
+    </nav>
 
                 <section>
                     <div>
@@ -34,6 +41,9 @@
                 </div>
 
                 <main class="tjanstlayout">
+
+                    <img class="pic1" src="/img/bildsvarv.jpg" alt="">
+
                     <p class="text1"><span class="rubriktjanster">Svarvning</span> <br> Har du diamondcut fälgar? Då behöver dom
                         svarvas, detta görs med en unik teknik i vår
                         specialsvarv. Först lagas skadorna med ett
@@ -41,8 +51,8 @@
                         den där speciella ytan som gör att den ser ut att
                         komma ut direkt från fabrik</p>
 
-                    <img class="pic1" src="/img/bildsvarv.jpg" alt="">
 
+                    <img class="pic2" src="/img/bildrimdriection.jpg" alt="">
 
                     <p class="text2"><span class="rubriktjanster">Riktning</span> Har du kört på en trottoarkant ordentligt eller
                         varit med om en annan ordentlig smäll, Då är
@@ -50,9 +60,9 @@
                         får detta att lösa i vår riktmaskin. Riktningen
                         utförs i flera olika moment som kräver enorm
                         precision och kunskap.</p>
-                    
-                    <img class="pic2" src="/img/bildrimdriection.jpg" alt="">
+                        
 
+                    <img class="pic3" src="/img/spraypaint.jpg" alt="">
                 
                     <p class="text3"><span class="rubriktjanster">Lackering</span> Har du lackade fälgar så behöver fälgen slipas,
                         lagas och lackeras.
@@ -63,8 +73,8 @@
                         som är framtagen just för fälgar, som behöver
                         ett extra starkt skydd.</p>
 
-                        <img class="pic3" src="/img/spraypaint.jpg" alt="">
 
+                    <img class="pic4" src="/img/modify.jpg" alt="">
 
                     <p class="text4"><span class="rubriktjanster">Modifiering</span> Har du tröttnat på dina fälgar? Eller har du ett
                         par gamla liggandes som du vill göra moderna?
@@ -78,7 +88,6 @@
                         färgskimmer. Eller varför inte göra en fälg som
                         är helt kromad?</p>
 
-                        <img class="pic4" src="/img/modify.jpg" alt="">
                 </main>
 
                 <footer class="footer">
@@ -124,7 +133,13 @@
                         </div>
                     </footer>
     
-
- <script src="js/falgspecialisten.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function(){
+        $('.menu').click(function(){
+            $('ul').toggleClass('active');
+        })
+    })
+    </script>                    
 </body>
 </html>
