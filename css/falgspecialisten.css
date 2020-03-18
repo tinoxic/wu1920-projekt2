@@ -631,7 +631,7 @@ section{
   align-items: center;
   min-height: 80vh;
   top: 22.3vh;
-  background: url(/img/black.jpg);
+  background: url(../img/black.jpg);
   background-size: cover;
   opacity: 1;
 }
@@ -643,7 +643,7 @@ section{
   align-items: center;
   min-height: 80vh;
   top: 22.3vh;
-  background: url(/img/photo-1485291571150-772bcfc10da5.jpg);
+  background: url(../img/photo-1485291571150-772bcfc10da5.jpg);
   background-size: cover;
   opacity: 1;
 }
@@ -655,7 +655,7 @@ section{
   align-items: center;
   min-height: 80vh;
   top: 22.3vh;
-  background: url(/img/plant.jpg);
+  background: url(../img/plant.jpg);
   background-size: cover;
   margin-bottom: 32vh;
 }
@@ -667,7 +667,7 @@ section{
   align-items: center;
   min-height: 80vh;
   top: 22.3vh;
-  background: url(/img/question.jpg);
+  background: url(../img/question.jpg);
   background-size: cover;
   opacity: 1;
 }
