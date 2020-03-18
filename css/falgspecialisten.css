@@ -856,7 +856,7 @@ section div p{
   }
 
   nav{
-    display: block;
+    display: grid;
     grid-template-columns: repeat(2,1fr);
     margin: auto;
     text-align: center;
